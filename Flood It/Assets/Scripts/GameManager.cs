@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour {
     void Start ()
     {
         // Setting rectangle size
-        rectWidth =  boardWidth / amountOfRectanglesX;
+        rectWidth = boardWidth / amountOfRectanglesX;
         rectHeight = boardHeight / amountOfRectanglesY;
 
         SpawnRectangles();
