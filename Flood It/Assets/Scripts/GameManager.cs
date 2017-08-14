@@ -17,8 +17,6 @@ public class GameManager : MonoBehaviour {
 
     public GameObject[,] rectArray;
 
-    Color startColor;
-
     List<Color> colorList;
 
     void Start ()
@@ -28,8 +26,6 @@ public class GameManager : MonoBehaviour {
         rectHeight = boardHeight / amountOfRectanglesY;
 
         SpawnRectangles();
-
-        startColor = rectArray[0, 0].GetComponent<SpriteRenderer>().color;
     }
 
     void SpawnRectangles()
