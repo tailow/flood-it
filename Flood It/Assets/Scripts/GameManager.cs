@@ -64,7 +64,6 @@ public class GameManager : MonoBehaviour {
                 rectArray[x, y] = rectParent.GetChild(x + (y * amountOfRectanglesX)).gameObject;
             }
         }
-
     }
 
     public void ConnectColors(Color nextColor)
