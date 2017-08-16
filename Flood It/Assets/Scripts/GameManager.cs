@@ -68,9 +68,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void ConnectColors(Color nextColor)
-    {
-        Debug.Log(currentBlocksList.Count);    
-
+    {    
         UpdateNeighbors();
 
         foreach (GameObject block in currentBlocksList)
@@ -79,7 +77,6 @@ public class GameManager : MonoBehaviour {
         }
 
         currentColor = nextColor;
-
         GetCurrentBlocks();
     }
 
@@ -110,8 +107,7 @@ public class GameManager : MonoBehaviour {
                     if (!currentBlocksList.Contains(rectArray[currentBlockX, currentBlockY - 1])) // If not already in current block list
                     {
                         currentBlocksList.Add(rectArray[currentBlockX, currentBlockY - 1]);
-                        //Debug.Log("Found current block at " + currentBlockX + " " + (currentBlockY - 1) + " with the color " + rectArray[currentBlockX, currentBlockY - 1].GetComponent<SpriteRenderer>().color);
-
+                        
                         // Check its neighbors
                         CheckNeighboringBlocks(currentBlockX, currentBlockY - 1);
                     }               
@@ -133,8 +129,7 @@ public class GameManager : MonoBehaviour {
                     if (!currentBlocksList.Contains(rectArray[currentBlockX + 1, currentBlockY])) // If not already in current block list
                     {
                         currentBlocksList.Add(rectArray[currentBlockX + 1, currentBlockY]);
-                        //Debug.Log("Found current block at " + (currentBlockX + 1) + " " + (currentBlockY) + " with the color " + rectArray[currentBlockX + 1, currentBlockY].GetComponent<SpriteRenderer>().color);
-
+                        
                         // Check its neighbors
                         CheckNeighboringBlocks(currentBlockX + 1, currentBlockY);
                     }
@@ -156,9 +151,7 @@ public class GameManager : MonoBehaviour {
                     if (!currentBlocksList.Contains(rectArray[currentBlockX, currentBlockY + 1])) // If not already in current block list
                     {
                         currentBlocksList.Add(rectArray[currentBlockX, currentBlockY + 1]);
-                        //Debug.Log("Found current block at " + currentBlockX + " " + (currentBlockY + 1) + " with the color " + rectArray[currentBlockX, currentBlockY + 1].GetComponent<SpriteRenderer>().color);
-
-
+                        
                         // Check its neighbors
                         CheckNeighboringBlocks(currentBlockX, currentBlockY + 1);
                     }
@@ -180,8 +173,6 @@ public class GameManager : MonoBehaviour {
                     if (!currentBlocksList.Contains(rectArray[currentBlockX - 1, currentBlockY])) // If not already in current block list
                     {
                         currentBlocksList.Add(rectArray[currentBlockX - 1, currentBlockY]);
-                        //Debug.Log("Found current block at " + (currentBlockX - 1) + " " + (currentBlockY) + " with the color " + rectArray[currentBlockX - 1, currentBlockY].GetComponent<SpriteRenderer>().color);
-
 
                         // Check its neighbors
                         CheckNeighboringBlocks(currentBlockX - 1, currentBlockY);
@@ -215,5 +206,4 @@ public class GameManager : MonoBehaviour {
 
         return randomColor;
     }
-
-    }
+}
