@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour {
 
@@ -9,7 +10,10 @@ public class ButtonScript : MonoBehaviour {
 
     private void Start()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        if (SceneManager.GetActiveScene().name == "scene_main")
+        {
+            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        }   
     }
 
     public void ButtonIsPressed()
@@ -25,5 +29,20 @@ public class ButtonScript : MonoBehaviour {
         }
 
         gameManager.ConnectColors(GetComponent<Image>().color);
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("scene_main");
+    }
+
+    public void MainMenu()
+    {
+        Debug.Log("go to menu");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

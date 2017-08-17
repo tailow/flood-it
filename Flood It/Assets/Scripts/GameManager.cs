@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -12,8 +13,15 @@ public class GameManager : MonoBehaviour {
     int rectHeight;
     int rectWidth;
 
+    public int amountOfMoves = 10;
+
     public Transform rectParent;
     public GameObject rectPrefab;
+
+    public GameObject endScreen;
+    public Text endScreenText;
+
+    public Text amountOfMovesText;
 
     public Color currentColor;
 
@@ -38,6 +46,8 @@ public class GameManager : MonoBehaviour {
         currentBlocksList.Add(rectArray[0, 0]);
 
         GetCurrentBlocks();
+
+        amountOfMovesText.text = amountOfMoves.ToString();
     }
 
     void SpawnRectangles()
@@ -67,8 +77,21 @@ public class GameManager : MonoBehaviour {
     }
 
     public void ConnectColors(Color nextColor)
-    {    
-        UpdateNeighbors();
+    {
+        amountOfMoves--;
+        amountOfMovesText.text = amountOfMoves.ToString();
+
+        if (amountOfMoves <= 0)
+        {
+            endScreenText.text = "You lost.";
+
+            endScreen.SetActive(true);
+
+            foreach (Transform child in GameObject.Find("Buttons").transform)
+            {
+                child.GetComponent<Button>().interactable = false;
+            }
+        }
 
         foreach (GameObject block in currentBlocksList)
         {
@@ -77,17 +100,25 @@ public class GameManager : MonoBehaviour {
 
         currentColor = nextColor;
         GetCurrentBlocks();
-    }
 
-    void UpdateNeighbors()
-    {
-        currentNeighborsList.Clear();
+        if (currentBlocksList.Count >= amountOfRectanglesX * amountOfRectanglesY)
+        {
+            endScreenText.text = "You won!";
+            endScreenText.color = Color.green;
+            
+            endScreen.SetActive(true);
 
-        CheckNeighboringBlocks(0, 0);
+            foreach (Transform child in GameObject.Find("Buttons").transform)
+            {
+                child.GetComponent<Button>().interactable = false;
+            }
+        }
     }
 
     void GetCurrentBlocks()
     {
+        currentNeighborsList.Clear();
+
         currentBlocksList.Clear();
 
         CheckNeighboringBlocks(0, 0);
