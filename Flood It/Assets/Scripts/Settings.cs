@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Settings : MonoBehaviour {
 
@@ -10,12 +11,17 @@ public class Settings : MonoBehaviour {
 
     int amountOfTurns;
 
-    private void Start()
-    {
-        gameObject.GetComponent<Dropdown>().value = 1;
+    int easyDifficulty = 5;
+    int mediumDifficulty = 10;
+    int hardDifficulty = 15;
 
-        SetBoardSize();
-        SetDifficulty();
+    void Start()
+    {
+        // Setting dropdown values to default
+        if (SceneManager.GetActiveScene().name == "scene_settings")
+        {
+            gameObject.GetComponent<Dropdown>().value = 1;
+        }
     }
 
     public void SetBoardSize()
@@ -27,6 +33,8 @@ public class Settings : MonoBehaviour {
 
             PlayerPrefs.SetInt("boardWidth", boardWidth);
             PlayerPrefs.SetInt("boardHeight", boardHeight);
+
+            SetDifficulty();
         }
 
         else if (gameObject.GetComponent<Dropdown>().value == 1)
@@ -36,6 +44,8 @@ public class Settings : MonoBehaviour {
 
             PlayerPrefs.SetInt("boardWidth", boardWidth);
             PlayerPrefs.SetInt("boardHeight", boardHeight);
+
+            SetDifficulty();
         }
 
         else if (gameObject.GetComponent<Dropdown>().value == 2)
@@ -45,16 +55,16 @@ public class Settings : MonoBehaviour {
 
             PlayerPrefs.SetInt("boardWidth", boardWidth);
             PlayerPrefs.SetInt("boardHeight", boardHeight);
-        }
 
-        SetDifficulty();
+            SetDifficulty();
+        }
     }
 
     public void SetDifficulty()
     {
         if (gameObject.GetComponent<Dropdown>().value == 0)
         {
-            amountOfTurns = (boardWidth * boardHeight) / 5;
+            amountOfTurns = (boardWidth * boardHeight) / easyDifficulty;
             Mathf.RoundToInt(amountOfTurns);
 
             PlayerPrefs.SetInt("amountOfTurns", amountOfTurns);
@@ -62,7 +72,7 @@ public class Settings : MonoBehaviour {
 
         else if (gameObject.GetComponent<Dropdown>().value == 1)
         {
-            amountOfTurns = (boardWidth * boardHeight) / 10;
+            amountOfTurns = (boardWidth * boardHeight) / mediumDifficulty;
             Mathf.RoundToInt(amountOfTurns);
 
             PlayerPrefs.SetInt("amountOfTurns", amountOfTurns);
@@ -70,7 +80,7 @@ public class Settings : MonoBehaviour {
 
         else if (gameObject.GetComponent<Dropdown>().value == 2)
         {
-            amountOfTurns = (boardWidth * boardHeight) / 15;
+            amountOfTurns = (boardWidth * boardHeight) / hardDifficulty;
             Mathf.RoundToInt(amountOfTurns);
 
             PlayerPrefs.SetInt("amountOfTurns", amountOfTurns);

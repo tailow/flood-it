@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
     int rectHeight;
     int rectWidth;
 
-    public int amountOfMoves = 10;
+    int amountOfMoves;
 
     public Transform rectParent;
     public GameObject rectPrefab;
@@ -33,6 +33,21 @@ public class GameManager : MonoBehaviour {
 
     void Start ()
     {
+        if (PlayerPrefs.GetInt("boardWidth") == 0)
+        {
+            PlayerPrefs.SetInt("boardWidth", 14);
+        }
+
+        else if (PlayerPrefs.GetInt("boardHeight") == 0)
+        {
+            PlayerPrefs.SetInt("boardHeight", 14);
+        }
+
+        else if (PlayerPrefs.GetInt("amountOfTurns") == 0)
+        {
+            PlayerPrefs.SetInt("amountOfTurns", 19);
+        }
+
         amountOfRectanglesX = PlayerPrefs.GetInt("boardWidth");
         amountOfRectanglesY = PlayerPrefs.GetInt("boardHeight");
 

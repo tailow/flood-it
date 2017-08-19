@@ -8,12 +8,12 @@ public class ButtonScript : MonoBehaviour {
 
     GameManager gameManager;
 
-    private void Start()
+    void Start()
     {
         if (SceneManager.GetActiveScene().name == "scene_main")
         {
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        }   
+        }
     }
 
     public void ButtonIsPressed()
@@ -38,13 +38,23 @@ public class ButtonScript : MonoBehaviour {
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("scene_menu");
+        PlayerPrefs.SetInt("boardWidth", 14);
+        PlayerPrefs.SetInt("boardHeight", 14);
 
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("amountOfTurns", 19);
+
+        SceneManager.LoadScene("scene_menu");
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("scene_menu");
     }
 
     public void ExitGame()
     {
+        PlayerPrefs.DeleteAll();
+
         Application.Quit();
     }
 
