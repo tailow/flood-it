@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
-    public int amountOfRectanglesX;
-    public int amountOfRectanglesY;
+    int amountOfRectanglesX;
+    int amountOfRectanglesY;
     public int boardWidth = 600;
     public int boardHeight = 600;
 
@@ -33,6 +33,11 @@ public class GameManager : MonoBehaviour {
 
     void Start ()
     {
+        amountOfRectanglesX = PlayerPrefs.GetInt("boardWidth");
+        amountOfRectanglesY = PlayerPrefs.GetInt("boardHeight");
+
+        amountOfMoves = PlayerPrefs.GetInt("amountOfTurns");
+
         // Setting rectangle size
         rectWidth = boardWidth / (amountOfRectanglesX - 1);
         rectHeight = boardHeight / (amountOfRectanglesY - 1);

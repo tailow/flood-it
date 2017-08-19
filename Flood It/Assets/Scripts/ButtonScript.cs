@@ -39,6 +39,8 @@ public class ButtonScript : MonoBehaviour {
     public void MainMenu()
     {
         SceneManager.LoadScene("scene_menu");
+
+        PlayerPrefs.DeleteAll();
     }
 
     public void ExitGame()
