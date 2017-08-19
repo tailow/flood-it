@@ -31,18 +31,23 @@ public class ButtonScript : MonoBehaviour {
         gameManager.ConnectColors(GetComponent<Image>().color);
     }
 
-    public void PlayAgain()
+    public void StartGame()
     {
         SceneManager.LoadScene("scene_main");
     }
 
     public void MainMenu()
     {
-        Debug.Log("go to menu");
+        SceneManager.LoadScene("scene_menu");
     }
 
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void Settings()
+    {
+        SceneManager.LoadScene("scene_settings");
     }
 }

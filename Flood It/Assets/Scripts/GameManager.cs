@@ -42,9 +42,6 @@ public class GameManager : MonoBehaviour {
         currentBlocksList = new List<GameObject>();
         currentNeighborsList = new List<GameObject>();
         
-        // Add first block to list
-        currentBlocksList.Add(rectArray[0, 0]);
-
         GetCurrentBlocks();
 
         amountOfMovesText.text = amountOfMoves.ToString();
@@ -120,6 +117,8 @@ public class GameManager : MonoBehaviour {
         currentNeighborsList.Clear();
 
         currentBlocksList.Clear();
+
+        currentBlocksList.Add(rectArray[0, 0]);
 
         CheckNeighboringBlocks(0, 0);
     }

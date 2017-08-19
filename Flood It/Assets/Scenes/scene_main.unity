@@ -495,7 +495,7 @@ MonoBehaviour:
   amountOfRectanglesY: 14
   boardWidth: 500
   boardHeight: 500
-  amountOfMoves: 25
+  amountOfMoves: 15
   rectParent: {fileID: 888697472}
   rectPrefab: {fileID: 1484345432987486, guid: 11992445e37159f49892260bf5b2c974, type: 2}
   endScreen: {fileID: 1119186819}
@@ -1668,7 +1668,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1786774785}
-        m_MethodName: PlayAgain
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
