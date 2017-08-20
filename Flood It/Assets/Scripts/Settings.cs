@@ -9,20 +9,15 @@ public class Settings : MonoBehaviour {
     int boardWidth;
     int boardHeight;
 
-    int amountOfTurns;
-
-    int easyDifficulty = 5;
-    int mediumDifficulty = 10;
-    int hardDifficulty = 15;
-
     void Start()
     {
-        // Setting dropdown values to default
-        if (SceneManager.GetActiveScene().name == "scene_settings")
+        if (gameObject.GetComponent<Dropdown>() && gameObject.name == "BoardSize")
         {
-            gameObject.GetComponent<Dropdown>().value = 1;
+            GetComponent<Dropdown>().value = 1;
+
+            SetBoardSize();
         }
-    }
+    }    
 
     public void SetBoardSize()
     {
@@ -33,8 +28,6 @@ public class Settings : MonoBehaviour {
 
             PlayerPrefs.SetInt("boardWidth", boardWidth);
             PlayerPrefs.SetInt("boardHeight", boardHeight);
-
-            SetDifficulty();
         }
 
         else if (gameObject.GetComponent<Dropdown>().value == 1)
@@ -44,8 +37,6 @@ public class Settings : MonoBehaviour {
 
             PlayerPrefs.SetInt("boardWidth", boardWidth);
             PlayerPrefs.SetInt("boardHeight", boardHeight);
-
-            SetDifficulty();
         }
 
         else if (gameObject.GetComponent<Dropdown>().value == 2)
@@ -55,35 +46,6 @@ public class Settings : MonoBehaviour {
 
             PlayerPrefs.SetInt("boardWidth", boardWidth);
             PlayerPrefs.SetInt("boardHeight", boardHeight);
-
-            SetDifficulty();
-        }
-    }
-
-    public void SetDifficulty()
-    {
-        if (gameObject.GetComponent<Dropdown>().value == 0)
-        {
-            amountOfTurns = (boardWidth * boardHeight) / easyDifficulty;
-            Mathf.RoundToInt(amountOfTurns);
-
-            PlayerPrefs.SetInt("amountOfTurns", amountOfTurns);
-        }
-
-        else if (gameObject.GetComponent<Dropdown>().value == 1)
-        {
-            amountOfTurns = (boardWidth * boardHeight) / mediumDifficulty;
-            Mathf.RoundToInt(amountOfTurns);
-
-            PlayerPrefs.SetInt("amountOfTurns", amountOfTurns);
-        }
-
-        else if (gameObject.GetComponent<Dropdown>().value == 2)
-        {
-            amountOfTurns = (boardWidth * boardHeight) / hardDifficulty;
-            Mathf.RoundToInt(amountOfTurns);
-
-            PlayerPrefs.SetInt("amountOfTurns", amountOfTurns);
         }
     }
 }

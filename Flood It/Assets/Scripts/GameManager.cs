@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour {
     public GameObject endScreen;
     public Text endScreenText;
 
+    public GameObject pauseScreen;
+
     public Text amountOfMovesText;
 
     public Color currentColor;
@@ -33,21 +35,6 @@ public class GameManager : MonoBehaviour {
 
     void Start ()
     {
-        if (PlayerPrefs.GetInt("boardWidth") == 0)
-        {
-            PlayerPrefs.SetInt("boardWidth", 14);
-        }
-
-        else if (PlayerPrefs.GetInt("boardHeight") == 0)
-        {
-            PlayerPrefs.SetInt("boardHeight", 14);
-        }
-
-        else if (PlayerPrefs.GetInt("amountOfTurns") == 0)
-        {
-            PlayerPrefs.SetInt("amountOfTurns", 19);
-        }
-
         amountOfRectanglesX = PlayerPrefs.GetInt("boardWidth");
         amountOfRectanglesY = PlayerPrefs.GetInt("boardHeight");
 
@@ -65,6 +52,32 @@ public class GameManager : MonoBehaviour {
         GetCurrentBlocks();
 
         amountOfMovesText.text = amountOfMoves.ToString();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && endScreen.activeInHierarchy == false && !pauseScreen.activeInHierarchy)
+        {
+            pauseScreen.SetActive(true);
+
+            foreach (Transform child in GameObject.Find("Buttons").transform)
+            {
+                child.GetComponent<Button>().interactable = false;
+            }
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Escape) && endScreen.activeInHierarchy == false && pauseScreen.activeInHierarchy)
+        {
+            pauseScreen.SetActive(false);
+
+            foreach (Transform child in GameObject.Find("Buttons").transform)
+            {
+                if (child.GetComponent<Image>().color != currentColor)
+                {
+                    child.GetComponent<Button>().interactable = true;
+                }
+            }
+        }
     }
 
     void SpawnRectangles()
