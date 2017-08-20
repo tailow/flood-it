@@ -1,0 +1,73 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 940MX (ID=0x134d)
+    Vendor:   NVIDIA
+    VRAM:     2020 MB
+    Driver:   22.21.13.8528
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.4\FloodIt_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.138 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.231025 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 17.639994 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.777166 ms (FindLiveObjects: 0.069818 ms CreateObjectMapping: 0.039845 ms MarkObjects: 0.653398 ms  DeleteObjects: 0.011283 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.377320 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 0.773288 ms (FindLiveObjects: 0.072991 ms CreateObjectMapping: 0.054302 ms MarkObjects: 0.601211 ms  DeleteObjects: 0.043019 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.008835 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.699943 ms (FindLiveObjects: 0.061002 ms CreateObjectMapping: 0.036319 ms MarkObjects: 0.590632 ms  DeleteObjects: 0.009873 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.529277 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 0.295140 ms (FindLiveObjects: 0.021509 ms CreateObjectMapping: 0.012341 ms MarkObjects: 0.225321 ms  DeleteObjects: 0.034909 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.350853 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 356.
+Total: 0.661508 ms (FindLiveObjects: 0.055360 ms CreateObjectMapping: 0.038435 ms MarkObjects: 0.555018 ms  DeleteObjects: 0.010931 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.359316 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 361.
+Total: 0.753894 ms (FindLiveObjects: 0.052539 ms CreateObjectMapping: 0.038435 ms MarkObjects: 0.620957 ms  DeleteObjects: 0.040198 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.315259 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 397.
+Total: 0.764119 ms (FindLiveObjects: 0.081101 ms CreateObjectMapping: 0.053597 ms MarkObjects: 0.616726 ms  DeleteObjects: 0.010931 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 64ec -> priority: 1 
+  Thread -> id: 5ed0 -> priority: 1 
