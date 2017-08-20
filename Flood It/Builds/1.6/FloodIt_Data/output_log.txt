@@ -7,25 +7,193 @@ Direct3D:
     VRAM:     2020 MB
     Driver:   22.21.13.8528
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
-Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
-Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\System.dll (this message is harmless)
-Platform assembly: C:\Users\revit\Desktop\Projektit\button-clicker\PressTheButton\Builds\1.6\FloodIt_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.136 seconds
+Platform assembly: C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\revit\Desktop\Projektit\flood-it\Flood It\Builds\1.6\FloodIt_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.026 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.033186 ms
+UnloadTime: 2.476778 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 18.222869 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.765883 ms (FindLiveObjects: 0.083217 ms CreateObjectMapping: 0.038082 ms MarkObjects: 0.629773 ms  DeleteObjects: 0.013046 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.844537 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 0.704880 ms (FindLiveObjects: 0.058534 ms CreateObjectMapping: 0.037377 ms MarkObjects: 0.564539 ms  DeleteObjects: 0.043019 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.050797 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.751073 ms (FindLiveObjects: 0.081101 ms CreateObjectMapping: 0.055360 ms MarkObjects: 0.601211 ms  DeleteObjects: 0.011988 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.954200 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 1.162576 ms (FindLiveObjects: 0.098732 ms CreateObjectMapping: 0.059592 ms MarkObjects: 0.988031 ms  DeleteObjects: 0.013752 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.032481 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.905166 ms (FindLiveObjects: 0.229200 ms CreateObjectMapping: 0.051129 ms MarkObjects: 0.610026 ms  DeleteObjects: 0.013399 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.126982 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.715811 ms (FindLiveObjects: 0.058534 ms CreateObjectMapping: 0.044429 ms MarkObjects: 0.600153 ms  DeleteObjects: 0.010225 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.963368 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.803965 ms (FindLiveObjects: 0.082512 ms CreateObjectMapping: 0.058886 ms MarkObjects: 0.644582 ms  DeleteObjects: 0.015867 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.969715 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.894235 ms (FindLiveObjects: 0.058886 ms CreateObjectMapping: 0.042313 ms MarkObjects: 0.777872 ms  DeleteObjects: 0.013399 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.940448 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 360.
+Total: 0.683370 ms (FindLiveObjects: 0.053597 ms CreateObjectMapping: 0.046192 ms MarkObjects: 0.539855 ms  DeleteObjects: 0.041961 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.078301 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 356.
+Total: 0.669266 ms (FindLiveObjects: 0.055360 ms CreateObjectMapping: 0.041256 ms MarkObjects: 0.558897 ms  DeleteObjects: 0.012341 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.249320 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 361.
+Total: 0.710522 ms (FindLiveObjects: 0.058181 ms CreateObjectMapping: 0.040550 ms MarkObjects: 0.570180 ms  DeleteObjects: 0.040198 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.394598 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 397.
+Total: 0.720748 ms (FindLiveObjects: 0.061355 ms CreateObjectMapping: 0.037377 ms MarkObjects: 0.609321 ms  DeleteObjects: 0.011283 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.205616 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 361.
+Total: 0.799029 ms (FindLiveObjects: 0.044077 ms CreateObjectMapping: 0.179834 ms MarkObjects: 0.539150 ms  DeleteObjects: 0.034556 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.929849 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 357.
+Total: 0.771172 ms (FindLiveObjects: 0.077928 ms CreateObjectMapping: 0.058534 ms MarkObjects: 0.618136 ms  DeleteObjects: 0.014457 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.895293 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.872020 ms (FindLiveObjects: 0.057123 ms CreateObjectMapping: 0.037024 ms MarkObjects: 0.734147 ms  DeleteObjects: 0.042313 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.124846 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 0.716869 ms (FindLiveObjects: 0.061002 ms CreateObjectMapping: 0.037377 ms MarkObjects: 0.605089 ms  DeleteObjects: 0.011283 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.086411 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 0.505652 ms (FindLiveObjects: 0.045487 ms CreateObjectMapping: 0.029267 ms MarkObjects: 0.421729 ms  DeleteObjects: 0.008110 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.591358 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 0.917155 ms (FindLiveObjects: 0.074754 ms CreateObjectMapping: 0.043019 ms MarkObjects: 0.783161 ms  DeleteObjects: 0.014809 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.800107 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 0.730974 ms (FindLiveObjects: 0.063470 ms CreateObjectMapping: 0.039493 ms MarkObjects: 0.613905 ms  DeleteObjects: 0.013046 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.429859 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.735558 ms (FindLiveObjects: 0.068760 ms CreateObjectMapping: 0.042666 ms MarkObjects: 0.581112 ms  DeleteObjects: 0.040903 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.099458 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 358.
+Total: 0.868141 ms (FindLiveObjects: 0.081101 ms CreateObjectMapping: 0.071228 ms MarkObjects: 0.697475 ms  DeleteObjects: 0.016220 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.871315 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.696417 ms (FindLiveObjects: 0.054655 ms CreateObjectMapping: 0.037729 ms MarkObjects: 0.551139 ms  DeleteObjects: 0.050776 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.050091 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 0.735205 ms (FindLiveObjects: 0.062765 ms CreateObjectMapping: 0.038082 ms MarkObjects: 0.620605 ms  DeleteObjects: 0.011636 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.484162 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 0.617431 ms (FindLiveObjects: 0.064881 ms CreateObjectMapping: 0.031735 ms MarkObjects: 0.511293 ms  DeleteObjects: 0.008815 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.875567 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.972868 ms (FindLiveObjects: 0.056066 ms CreateObjectMapping: 0.045134 ms MarkObjects: 0.818070 ms  DeleteObjects: 0.051482 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.156229 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 0.861442 ms (FindLiveObjects: 0.083217 ms CreateObjectMapping: 0.055713 ms MarkObjects: 0.704527 ms  DeleteObjects: 0.016220 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.666818 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 398.
+Total: 0.773640 ms (FindLiveObjects: 0.119184 ms CreateObjectMapping: 0.038435 ms MarkObjects: 0.601916 ms  DeleteObjects: 0.012341 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.135445 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.784924 ms (FindLiveObjects: 0.085685 ms CreateObjectMapping: 0.057123 ms MarkObjects: 0.597685 ms  DeleteObjects: 0.042313 ms)
+
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 6e5c -> priority: 1 
-  Thread -> id: 5334 -> priority: 1 
+  Thread -> id: 1198 -> priority: 1 
+  Thread -> id: 6770 -> priority: 1 
